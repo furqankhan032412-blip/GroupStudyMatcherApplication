@@ -136,6 +136,11 @@ User data and group information are managed through `UserData.cs` class, which h
 ## License
 This project is currently unlicensed. Please contact the repository owner for usage rights.
 
+## Author
+
+Furqan Khan
+Artificial Intelligence Student
+
 ## Contact
 **Furqan Khan** - [GitHub Profile](https://github.com/furqankhan032412-blip)
 
