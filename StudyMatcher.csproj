@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAEECF50-CD60-45AC-B094-9E3E61507B5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StudyMatcher</RootNamespace>
+    <AssemblyName>StudyMatcher</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.9.1\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardForm.Designer.cs">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateGroup.Designer.cs">
+      <DependentUpon>CreateGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailsForm.Designer.cs">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="findstudymatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="findstudymatch.Designer.cs">
+      <DependentUpon>findstudymatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Match.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Match.Designer.cs">
+      <DependentUpon>Match.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile.Designer.cs">
+      <DependentUpon>profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSystem.Designer.cs">
+      <DependentUpon>SearchSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs" />
+    <Compile Include="VIEWGROUPSFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWGROUPSFORM.Designer.cs">
+      <DependentUpon>VIEWGROUPSFORM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDashboardForm.resx">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateGroup.resx">
+      <DependentUpon>CreateGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsForm.resx">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="findstudymatch.resx">
+      <DependentUpon>findstudymatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Match.resx">
+      <DependentUpon>Match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile.resx">
+      <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSystem.resx">
+      <DependentUpon>SearchSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWGROUPSFORM.resx">
+      <DependentUpon>VIEWGROUPSFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\character-collaborating-study-groups_778780-22964.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-purple-wave-background-vector-illustration_629712-421.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4510fc01-816a-4ea5-8afa-fb23f5508229.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-meeting-icon-vector-illustration-260nw-2201741403.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\character-collaborating-study-groups_778780-229641.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1018983060-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaaaaaaaaaaaaaaaaaaaaaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfffsfds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Form1.cs.txt" />
+    <None Include="Resources\36ffccfb-f7af-4b3a-bfba-98b96b8fafe5.jfif" />
+    <None Include="Resources\Screenshot 2026-05-19 120401.png" />
+    <None Include="Resources\Screenshot 2026-05-19 115145.png" />
+    <None Include="Resources\Gemini_Generated_Image_z1i8hkz1i8hkz1i8.png" />
+    <None Include="Resources\download1.jpg" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

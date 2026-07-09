@@ -1,0 +1,13 @@
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.csproj.AssemblyReference.cache
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.AdminDashboardForm.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.CreateGroup.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.Dashboard.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.DetailsForm.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.lblUserSubject.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.LoginPage.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.Match.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.profile.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.Register.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.SearchSystem.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.VIEWGROUPSFORM.resources
+C:\Users\DEll\Desktop\StudyMatcher\obj\Debug\StudyMatcher.csproj.GenerateResource.cache
